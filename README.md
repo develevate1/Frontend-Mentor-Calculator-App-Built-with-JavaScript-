@@ -83,7 +83,7 @@ A simple and responsive calculator app built with HTML, CSS, and vanilla JavaScr
 
     |
   | |
-  | Check out <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer"><strong>[**Pagespeed Insights**]</strong></a> to get live score |
+    | Check out [**Pagespeed Insights**](https://pagespeed.web.dev/) to get live score |
   ||
 
 <br>
@@ -92,11 +92,11 @@ A simple and responsive calculator app built with HTML, CSS, and vanilla JavaScr
 
 ## The Challenge
 
-- The challenge is to build out this pricing component and get it looking as close to the design as possible.
+- Your challenge is to build out this calculator app and get it looking as close to the design as possible..
 - Users should be able to:
-    - View the optimal layout for the site depending on their device's screen size
-    - Control the toggle with both their mouse/trackpad and their keyboard
-    - See hover states for all interactive elements on the page
+    - See the size of the elements adjust based on their device's screen size
+    - Perform mathematical operations like addition, subtraction, multiplication, and division
+    - Adjust the color theme based on their preference
 
 <br>
 
