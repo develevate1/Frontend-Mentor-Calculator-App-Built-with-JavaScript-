@@ -136,7 +136,7 @@ A simple and responsive calculator app built with HTML, CSS, and vanilla JavaScr
     <img src="https://img.shields.io/badge/gmail-%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white" alt=mail/>
   </a>&nbsp;&nbsp;  
 
-  <a href="https://github.com/aratidsa" >
+  <a href="https://github.com/develevate1?tab=repositories">
     <img src="https://img.shields.io/badge/Github%20Profile-131313?style=for-the-badge&logo=github&logoColor=white" alt="Github Profile">
   </a>
 
