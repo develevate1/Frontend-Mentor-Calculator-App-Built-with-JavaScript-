@@ -76,10 +76,12 @@ A simple and responsive calculator app built with HTML, CSS, and vanilla JavaScr
   
 - ||
   | :-----: |
-  |  <b>Overall score 96.5% for Both Mobile & Desktop</b><br>(Below scores are for mobile and desktop devices) |
+  |  <b>Overall score 95% for Both Mobile & Desktop</b><br>(Below scores are for mobile and desktop devices) |
   | |
-  | ![Screenshot 2024-10-28 191752](https://github.com/user-attachments/assets/07fa5098-f00b-41dd-9025-1534d1c3cfdd) 
-    ![Screenshot 2024-10-28 191735](https://github.com/user-attachments/assets/b91a1bf7-bd95-46b7-881c-c281a0e6bd36) |
+  |  ![Screenshot 2025-05-26 150240](https://github.com/user-attachments/assets/807c7c64-73c3-42f8-af77-34031acbd3bc)
+     ![Screenshot 2025-05-26 150253](https://github.com/user-attachments/assets/f0b2e48e-ffe4-482c-bd7b-bcbc7b8f7af4)
+
+    |
   | |
   | Check out [**Pagespeed Insights**](https://pagespeed.web.dev/) to get live score |
   ||
