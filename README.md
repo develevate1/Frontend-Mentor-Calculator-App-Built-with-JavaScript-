@@ -66,8 +66,8 @@ A simple and responsive calculator app built with HTML, CSS, and vanilla JavaScr
 
 - |||
   | :----- | :----- |
-  | Solution URL: | [PRICING COMPONENT WITH TOGGLE 🎯 [ ACCESSIBLE - BEM - VANILLA CSS3 - ES6 ]](https://www.frontendmentor.io/solutions/news-homepage-accessible-bem-vanilla-css3-es6-hhKqq2TIDw) |
-  | Live Site URL: | [https://github.com/aratidsa/Pricing-Component-with-Toggle](https://github.com/aratidsa/Pricing-Component-with-Toggle) |
+  | Solution URL: | [Calculator App With Theme Toggle 🎯 [ ACCESSIBLE - BEM - VANILLA CSS3 - ES6 ]](https://github.com/develevate1/Frontend-Mentor-Calculator-App-Built-with-JavaScript-) |
+  | Live Site URL: | https://calculatorappdesign.netlify.app/ |
   |||
 
 <br>
