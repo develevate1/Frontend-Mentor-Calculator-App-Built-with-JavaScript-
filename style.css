@@ -1,0 +1,574 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html, body {
+    height: 100%;
+    width: 100%;
+  }  
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+button, input, textarea, select {
+    font: inherit;
+  }
+  
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+ul, ol {
+    list-style: none;
+  }
+  
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: normal;
+  }
+
+/* CUSTOM PROPERTIES */
+:root{
+    /* ------------------------- THEME 1 -------------------------- */
+    /* Backgrounds */
+    --clr-veryDarkDesaturatedBlue-mainBckgrnd: hsl(222, 26%, 31%); 
+    --clr-veryDarkDesaturatedBlue-toggleKeypadBckgrnd: hsl(223, 31%, 20%); 
+    --clr-veryDarkDesaturatedBlue-screenBckgrnd: hsl(224, 36%, 15%); 
+
+    /* Keys */
+    --clr-desaturatedDarkBlue-keyBckgrnd: hsl(225, 21%, 49%);
+    --clr-desaturatedDarkBlue-keyShadow: hsl(224, 28%, 35%);
+
+    --clr-red-keyToggleBckgrnd: hsl(6, 63%, 50%);
+    --clr-darkRed-keyShadow:hsl(6, 70%, 34%);
+
+    --clr-lightGrayishOrange-keyBckgrnd: hsl(30, 25%, 89%);
+    --clr-grayishOrange-keyShadow: hsl(28, 16%, 65%);
+
+    /* Text */
+    --clr-veryDarkGrayishBlue: hsl(221, 14%, 31%);
+    --clr-white: hsl(0, 0%, 100%);
+
+     /* ------------------------- THEME 2 -------------------------- */
+    /* Backgrounds */
+    --clr-lightGray-mainBckgrnd: hsl(0, 0%, 90%); 
+    --clr-grayishRed-toggleKeypadBckgrnd: hsl(0, 5%, 81%); 
+    --clr-veryLightGray-screenBckgrnd: hsl(0, 0%, 93%); 
+
+    /* Keys */
+    --clr-darkModerateCyan-keyBckgrnd: hsl(185, 42%, 37%);
+    --clr-veryDarkCyan-keyShadow: hsl(185, 58%, 25%);
+
+    --clr-orange-keyToggleBckgrnd: hsl(25, 98%, 40%);
+    --clr-darkOrange-keyShadow:hsl(25, 99%, 27%);
+
+    --clr-lightGrayishYellow-keyBckgrnd: hsl(45, 7%, 89%);
+    --clr-darkGrayishOrange-keyShadow: hsl(35, 11%, 61%);
+
+    /* Text */
+    --clr-veryDarkGrayishYellow: hsl(60, 10%, 19%);
+    --clr-white: hsl(0, 0%, 100%);
+
+         /* ------------------------- THEME 3 -------------------------- */
+    /* Backgrounds */
+    --clr-veryDarkViolet-mainBckgrnd: hsl(268, 75%, 9%); 
+    --clr-veryDarkViolet-toggleKeypadScreenBckgrnd: hsl(268, 71%, 12%); 
+  
+    /* Keys */
+    --clr-darkViolet-keyBckgrnd: hsl(281, 89%, 26%);
+    --clr-vividMagenta-keyShadow: hsl(285, 91%, 52%);
+
+    --clr-pureCyan-keyToggleBckgrnd: hsl(176, 100%, 44%);
+    --clr-softCyan-keyShadow:hsl(177, 92%, 70%);
+
+    --clr-veryDarkVioletl-keyBckgrnd: hsl(268, 47%, 21%);
+    --clr-darkMagenta-keyShadow: hsl(290, 70%, 36%);
+
+    /* Text */
+    --clr-lightYellow: hsl(52, 100%, 62%);
+    --clr-veryDarkBlue: hsl(198, 20%, 13%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* FONT SIZE */
+    --fs-32:32px;
+
+    /* FONT WEIGHT */
+    --fw-700:700;
+
+    /* FONT FAMILY */
+    --ff-leagueSpartan:"League Spartan", sans-serif;
+}
+
+/* ------------- BODY -------------------- */
+body{
+    font-weight: var(--fw-700);
+    font-size: 18px;
+    font-family: var(--ff-leagueSpartan);
+    line-height: 1.6;     
+    display:grid;
+    color:var(--clr-white);
+    background-color:var(--clr-veryDarkDesaturatedBlue-mainBckgrnd);  
+}
+
+/* ------------------- MAIN GRID ---------------------- */
+.main-grid{
+  width:100%;
+  max-width:600px;
+  margin:0 auto;
+}
+/* --------------------- SECTION GRID ----------------- */
+.section-grid{
+  display:grid;
+  grid-template-rows: auto auto auto;
+  row-gap:20px;
+  margin-top:65px;
+}
+/* --------------TOGGLE SLIDER --------------- */
+.grid-1{
+  margin-top:8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 35px 0 35px;
+  color : white;
+}
+.left-title {
+  font-size: 32px;
+  font-weight: var(--fw-700);
+}
+.theme-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.top-labels {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+.top-labels label {
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.slider-row {
+  display: flex;
+  align-items: center; /* ← Centers Theme label with slider vertically */
+  gap: 0.75rem;
+}
+.theme-label {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 14px;
+}
+.slider-wrapper {
+  position: relative;
+  width: 70px;
+  height: 26px;
+  bottom:4px;
+  left:5px;
+}
+.slider-bg {
+  background: var(--clr-veryDarkDesaturatedBlue-toggleKeypadBckgrnd);
+  border-radius: 999px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.slider-circle {
+  position: absolute;
+  top: 4px;
+  left:6px;
+  width: 16px;
+  height: 16px;
+  background: var(--clr-darkRed-keyShadow);
+  border-radius: 50%;
+  transition: left 0.3s ease;
+  z-index: 9999;
+  cursor: pointer;
+}
+.slider-circle:hover {
+  background:var(--clr-red-keyToggleBckgrnd);
+}
+
+/* ------------------ Invisible radio buttons for theme switch ------------------ */
+input[type="radio"] {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+/* ------------------ Radio button positions ----------- */
+#theme1 { left: 0; }
+#theme2 { left: 28px; }
+#theme3 { left: 45px; }
+/* ---------------------- Moves slider circle based on selected theme -------------------- */
+#theme1:checked ~ .slider-bg .slider-circle { left: 6px; }
+#theme2:checked ~ .slider-bg .slider-circle { left: 28px; }
+#theme3:checked ~ .slider-bg .slider-circle { left: 45px; }
+
+/* --------------END TOGGLE SLIDER --------------- */
+
+/* ------------------- SCREEN DISPLAY ---------------------- */
+.grid-2{
+  width: 100%;
+  max-width: 540px;
+  margin:0 auto;
+  height:130px;
+  margin-top:5px;
+  border-radius: 10px;
+  padding:20px 29px 25px 20px;
+  text-align: right;
+  font-size: 56px;
+  background-color: var(--clr-veryDarkDesaturatedBlue-screenBckgrnd);
+}
+.expression{
+  font-size: 16px;
+  /* padding-top:-5px; */
+  margin-top:0;
+}
+
+/* ------------------- CALCULATOR BUTTONS --------------------------- */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  row-gap: 25px;
+  column-gap: 20px; /* optional spacing between columns */  
+  width: 100%;
+  max-width: 540px; /* Controls max size of the grid */
+  margin:3px auto; /* Centers the grid horizontally */
+  padding: 32px 30px; /* Equal side padding to prevent sticking on mobile */  
+  box-sizing: border-box;
+  background-color: var(--clr-veryDarkDesaturatedBlue-toggleKeypadBckgrnd);
+  border-radius: 10px;
+}
+/* ----------------------- Generic Button Style ----------------------- */
+.btn{
+  width:100px;
+  height:63px;
+  background-color: var(--clr-lightGrayishOrange-keyBckgrnd);
+  box-shadow: inset 0 -6px 4px -2px var(--clr-grayishOrange-keyShadow);
+  outline: none;
+  border-radius: 10px;
+  border:none;
+  cursor:pointer;
+  color:var(--clr-veryDarkGrayishBlue);
+  font-size:40px;
+}
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--btn-shadow, var(--clr-grayishOrange-keyShadow));
+}
+/* ----------------- Special Button Styles ------------------- */
+.delBtn,
+.reset{
+  text-transform: uppercase;
+  font-size: 29px;
+  color:var(--clr-white);
+}
+/* ------------------- DELETE Button ---------------------- */
+.delBtn{
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: inset 0 -6px 4px -2px hsl(224, 28%, 35%); 
+  color:var(--clr-white);
+}
+/* ------------------- RESET Button --------------------- */
+.reset{
+  background-color: hsl(226, 25%, 55%);
+  box-shadow: inset 0 -6px 4px -2px hsl(224, 28%, 35%);
+  color:var(--clr-white);
+}
+.delBtn:hover{
+  background-color: hsl(225, 73%, 81%);
+}
+.reset:hover{
+  background-color: hsl(225, 73%, 81%);
+}
+/* ----------------------- EQUAL Button --------------------- */
+.eqlBtn{
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: inset 0 -6px 4px -2px hsl(6, 70%, 34%);
+  color:var(--clr-white);
+  font-size: 28px;
+}
+.eqlBtn{
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: inset 0 -6px 4px -2px hsl(6, 70%, 34%);
+  color:var(--clr-white);
+  font-size: 28px;
+}
+.eqlBtn:hover{
+  background-color: hsl(6, 87%, 68%);
+}
+/* ------------------ Span reset and equal buttons across two columns ------------------ */
+.grid-3 .reset {
+  grid-column: span 2;
+  width:225px;
+  height:63px;
+}
+.grid-3 .eqlBtn {
+  grid-column: span 2;
+  width:225px;
+}
+/* ------------------------END CALCULATOR BUTTONS --------------------------- */
+/* ------------------------ THEME ------------------------- */
+body.theme1{
+  color:var(--clr-white);
+  background-color:var(--clr-veryDarkDesaturatedBlue-mainBckgrnd);  
+}
+body.theme2{
+  color:var(--clr-veryDarkGrayishYellow);
+  background-color:var(--clr-lightGray-mainBckgrnd);  
+}
+body.theme3{
+  color:var(--clr-lightYellow);
+  background-color:var(--clr-veryDarkViolet-mainBckgrnd);  
+}
+.grid-1.theme1{
+  color : white;
+}
+.grid-1.theme2{
+  color : var(--clr-veryDarkGrayishYellow);
+}
+.grid-1.theme3{
+  color : var(--clr-lightYellow);
+}
+.slider-bg.theme1 {
+  background: var(--clr-veryDarkDesaturatedBlue-toggleKeypadBckgrnd);
+}
+.slider-bg.theme2 {
+  background: var(--clr-grayishRed-toggleKeypadBckgrnd);
+}
+.slider-bg.theme3 {
+  background: var(--clr-veryDarkViolet-toggleKeypadScreenBckgrnd);
+}
+.slider-circle.theme1 {
+  background: var(--clr-darkRed-keyShadow);
+}
+.slider-circle.theme2 {
+  background: var(--clr-darkOrange-keyShadow);
+}
+.slider-circle.theme3 {
+  background: var(--clr-softCyan-keyShadow);
+}
+.slider-circle.theme1:hover {
+  background:var(--clr-red-keyToggleBckgrnd);
+}
+.slider-circle.theme2:hover {
+  background:var(--clr-orange-keyToggleBckgrnd);
+}
+.slider-circle.theme3:hover {
+  background: var(--clr-pureCyan-keyToggleBckgrnd);
+}
+.grid-2.theme1{
+  background-color: var(--clr-veryDarkDesaturatedBlue-screenBckgrnd);
+}
+.grid-2.theme2{
+  background-color: var(--clr-veryLightGray-screenBckgrnd);
+}
+.grid-2.theme3{
+  background-color: var(--clr-veryDarkViolet-toggleKeypadScreenBckgrnd);
+}
+.grid-3.theme1 {
+  background-color: var(--clr-veryDarkDesaturatedBlue-toggleKeypadBckgrnd);
+}
+.grid-3.theme2 {
+  background-color: var(--clr-grayishRed-toggleKeypadBckgrnd);
+}
+.grid-3.theme3 {
+  background-color: var(--clr-veryDarkViolet-toggleKeypadScreenBckgrnd);
+}
+.btn.theme1{
+  background-color: var(--clr-lightGrayishOrange-keyBckgrnd);
+  box-shadow: inset 0 -6px 4px -2px var(--clr-grayishOrange-keyShadow);
+  color:var(--clr-veryDarkGrayishBlue);
+}
+.btn.theme2{
+  background-color: var(--clr-lightGrayishYellow-keyBckgrnd);
+  box-shadow: inset 0 -6px 4px -2px var(--clr-darkGrayishOrange-keyShadow);
+  color:var(--clr-veryDarkGrayishYellow);
+}
+.btn.theme3{
+  background-color: var(--clr-veryDarkVioletl-keyBckgrnd);
+  box-shadow: inset 0 -6px 4px -2px var(--clr-darkMagenta-keyShadow);
+  color:var(--clr-lightYellow);
+}
+.btn.theme1:active {
+  box-shadow: 0 1px 0 var(--btn-shadow, var(--clr-grayishOrange-keyShadow));
+}
+.btn.theme2:active {
+  box-shadow: 0 1px 0 var(--btn-shadow, var(--clr-darkGrayishOrange-keyShadow));
+}
+.btn.theme3:active {
+  box-shadow: 0 1px 0 var(--btn-shadow, var(--clr-darkMagenta-keyShadow));
+}
+.btn.theme1:hover{
+  background-color: var(--clr-white);
+}
+.btn.theme2:hover{
+  background-color: var(--clr-white);
+}
+.btn.theme3:hover{
+  background-color: hsl(269, 45%, 37%);
+}
+.delBtn.theme1{
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: inset 0 -6px 4px -2px hsl(224, 28%, 35%);
+  color:var(--clr-white);
+}
+.reset.theme1{
+  background-color: hsl(226, 28%, 58%);
+  box-shadow: inset 0 -6px 4px -2px hsl(224, 28%, 35%);
+  color:var(--clr-white);
+}
+.delBtn.theme2{
+  background-color: var(--clr-darkModerateCyan-keyBckgrnd);
+  box-shadow: inset 0 -6px 4px -2px var(--clr-veryDarkCyan-keyShadow);
+  color:var(--clr-white);
+}
+.reset.theme2{
+  background-color: hsl(186, 41%, 42%);
+  box-shadow: inset 0 -6px 4px -2px var(--clr-veryDarkCyan-keyShadow);
+  color:var(--clr-white);
+}
+.delBtn.theme3{
+  background-color: var(--clr-darkViolet-keyBckgrnd);
+  box-shadow: inset 0 -6px 4px -2px var(--clr-vividMagenta-keyShadow);
+  color:var(--clr-white);
+}
+.reset.theme3{
+  background-color: hsl(281, 88%, 28%);
+  box-shadow: inset 0 -6px 4px -2px var(--clr-vividMagenta-keyShadow);
+  color:var(--clr-white);
+}
+.delBtn.theme1:hover{
+  background-color: hsl(225, 21%, 49%);
+}
+.delBtn.theme2:hover{
+  background-color: hsl(185, 40%, 53%);
+}
+.delBtn.theme3:hover{
+  background-color: hsl(281, 84%, 33%);
+}
+.reset.theme1:hover{
+  background-color: hsl(225, 73%, 81%);
+}
+.reset.theme2:hover{
+  background-color: hsl(186, 49%, 56%);
+}
+.reset.theme3:hover{
+  background-color: hsl(281, 79%, 38%);
+}
+.eqlBtn.theme1{
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: inset 0 -6px 4px -2px hsl(6, 70%, 34%);
+  color:var(--clr-white);
+}
+.eqlBtn.theme2{
+  background-color: var(--clr-orange-keyToggleBckgrnd);
+  box-shadow: inset 0 -6px 4px -2px var(--clr-darkOrange-keyShadow);
+  color:var(--clr-white);
+}
+.eqlBtn.theme3{
+  background-color: var(--clr-pureCyan-keyToggleBckgrnd);
+  box-shadow: inset 0 -6px 4px -2px var(--clr-softCyan-keyShadow);
+  color:var(--clr-veryDarkBlue);
+}
+.eqlBtn.theme1:hover{
+  background-color: hsl(6, 87%, 68%);
+}
+.eqlBtn.theme2:hover{
+  background-color: hsl(25, 96%, 59%);
+}
+.eqlBtn.theme3:hover{
+  background-color: hsl(177, 92%, 70%);
+}
+
+/* -------------------- FOOTER ----------------------------- */
+
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+}
+.attribuition {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+}
+.attribuition a{
+  color:var(--clr-darkModerateCyan-keyBckgrnd);
+  font-size:14px;
+}
+
+@media (max-width:600px){
+  .section-grid{
+    margin-top:0px;
+  }
+
+/* --------------TOGGLE SLIDER --------------- */
+  .grid-1{
+    padding: 1rem 30px 0 1rem;
+  }
+  .top-labels {
+    font-size: 0.8rem;
+  }
+  .theme-label {
+    font-size: 0.8rem;
+  }
+/* --------------END TOGGLE SLIDER --------------- */
+
+  .grid-2{
+    max-width: 325px;
+    height:88px;
+    padding:15px 20px 25px 20px;
+    font-size: 40px;
+  }
+  .expression{
+    font-size: 12px;
+  }
+/* ------------------- CALCULATOR BUTTONS --------------------------- */
+  .grid-3 {
+    row-gap: 15px;
+    column-gap: 10px; /* optional spacing between columns */  
+    max-width: 325px; /* Controls max size of the grid */
+    margin:5px auto; /* Centers the grid horizontally */
+    padding: 22px 21px; /* Equal side padding to prevent sticking on mobile */  
+  }
+  .btn{
+    width:63px;
+    border-radius: 5px;
+    font-size:32px;
+  }
+  .grid-3 .reset {
+    width:135px;
+  }
+  .grid-3 .eqlBtn {
+    width:135px;
+  }
+  .delBtn,.reset{
+    font-size: 20px;
+  }
+  .eqlBtn {
+    font-size:20px;
+  }
+}
+/* ------------------------END CALCULATOR BUTTONS --------------------------- */
+
