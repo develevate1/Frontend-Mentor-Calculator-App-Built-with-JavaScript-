@@ -83,7 +83,7 @@ A simple and responsive calculator app built with HTML, CSS, and vanilla JavaScr
 
     |
   | |
-  | Check out [**Pagespeed Insights**]<a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer"><strong>https://pagespeed.web.dev/</strong></a> to get live score |
+  | Check out <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer"><strong>[**Pagespeed Insights**]</strong></a> to get live score |
   ||
 
 <br>
