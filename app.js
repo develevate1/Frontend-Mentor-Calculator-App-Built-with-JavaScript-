@@ -12,7 +12,7 @@ function buildElement(tag, text, className = '', attributes = {}) {
 // Applies selected theme by updating class names
 function applyTheme(theme) {
   const elementsToTheme = [
-    grid, sliderBg, sliderCcl, resultBckgrd, keypadBckgrd,
+    grid, sliderBg, sliderCcl, resultBckgrd, keypadBckgrd,footer, ...attributionLinks,
     ...allBtns, ...resetBtn, ...equalBtn, ...delBtn
   ];
 
@@ -201,6 +201,8 @@ const allBtns = document.querySelectorAll('.btn');
 const resetBtn = document.querySelectorAll('.reset');
 const equalBtn = document.querySelectorAll('.eqlBtn');
 const delBtn = document.querySelectorAll('.delBtn');
+const footer = document.querySelector('footer');
+const attributionLinks = document.querySelectorAll('.fa');
 
 // Listen for theme change
 document.addEventListener('change', () => {
