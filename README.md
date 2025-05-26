@@ -46,13 +46,15 @@ A simple and responsive calculator app built with HTML, CSS, and vanilla JavaScr
   <p><b>Mobile Preview</b></p>
   <br>
  
-   ![screencapture-127-0-0-1-5500-index-html-2024-10-28-19_35_40](https://github.com/user-attachments/assets/f305b1da-accd-4a85-852b-5529091c77a7)
+   ![screencapture-127-0-0-1-5500-index-html-2025-05-26-14_54_13](https://github.com/user-attachments/assets/d1dde76f-d1d4-4752-aeef-03984eb06610)
+
 
 
   <br>
   <p><b> Desktop Preview</b></p>
   
-![screencapture-127-0-0-1-5500-index-html-2024-10-28-19_35_25](https://github.com/user-attachments/assets/a4249704-99b4-4dfc-b70c-cc569d5fde3a)
+![screencapture-127-0-0-1-5500-index-html-2025-05-26-14_53_44](https://github.com/user-attachments/assets/9ed4a9f1-c94e-464d-8006-a79cb860980a)
+
 
 
 <br>
