@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6, p {
     --clr-white: hsl(0, 0%, 100%);
 
     /* FONT SIZE */
-    --fs-32:32px;
+    --fs-32:2rem;
 
     /* FONT WEIGHT */
     --fw-700:700;
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* ------------- BODY -------------------- */
 body{
     font-weight: var(--fw-700);
-    font-size: 18px;
+    font-size: 1.13rem;
     font-family: var(--ff-leagueSpartan);
     line-height: 1.6;     
     display:grid;
@@ -116,27 +116,27 @@ body{
 /* ------------------- MAIN GRID ---------------------- */
 .main-grid{
   width:100%;
-  max-width:600px;
+  max-width:37.5rem;
   margin:0 auto;
 }
 /* --------------------- SECTION GRID ----------------- */
 .section-grid{
   display:grid;
   grid-template-rows: auto auto auto;
-  row-gap:20px;
-  margin-top:65px;
+  row-gap:1.25rem;
+  margin-top:4.06rem;
 }
 /* --------------TOGGLE SLIDER --------------- */
 .grid-1{
-  margin-top:8px;
+  margin-top:0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 20px 35px 0 35px;
+  padding: 1.25rem 2.19rem 0 2.19rem;
   color : white;
 }
 .left-title {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: var(--fw-700);
 }
 .theme-toggle {
@@ -147,12 +147,12 @@ body{
 .top-labels {
   display: flex;
   justify-content: space-between;
-  width: 60px;
+  width: 3.75rem;
   font-size: 0.9rem;
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 .top-labels label {
-  width: 20px;
+  width: 1.25rem;
   text-align: center;
   cursor: pointer;
 }
@@ -168,14 +168,14 @@ body{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  font-size: 14px;
+  font-size: 0.88rem;
 }
 .slider-wrapper {
   position: relative;
-  width: 70px;
-  height: 26px;
-  bottom:4px;
-  left:5px;
+  width: 4.38rem;
+  height: 1.63rem;
+  bottom:0.25rem;
+  left:0.31rem;
 }
 .slider-bg {
   background: var(--clr-veryDarkDesaturatedBlue-toggleKeypadBckgrnd);
@@ -186,10 +186,10 @@ body{
 }
 .slider-circle {
   position: absolute;
-  top: 4px;
-  left:6px;
-  width: 16px;
-  height: 16px;
+  top: 0.25rem;
+  left:0.38rem;
+  width: 1rem;
+  height: 1rem;
   background: var(--clr-darkRed-keyShadow);
   border-radius: 50%;
   transition: left 0.3s ease;
@@ -204,7 +204,7 @@ body{
 input[type="radio"] {
   position: absolute;
   top: 0;
-  width: 20px;
+  width: 1.25rem;
   height: 100%;
   opacity: 0;
   z-index: 2;
@@ -212,31 +212,30 @@ input[type="radio"] {
 }
 /* ------------------ Radio button positions ----------- */
 #theme1 { left: 0; }
-#theme2 { left: 28px; }
-#theme3 { left: 45px; }
+#theme2 { left: 1.75rem; }
+#theme3 { left: 2.81rem; }
 /* ---------------------- Moves slider circle based on selected theme -------------------- */
-#theme1:checked ~ .slider-bg .slider-circle { left: 6px; }
-#theme2:checked ~ .slider-bg .slider-circle { left: 28px; }
-#theme3:checked ~ .slider-bg .slider-circle { left: 45px; }
+#theme1:checked ~ .slider-bg .slider-circle { left: 0.38rem; }
+#theme2:checked ~ .slider-bg .slider-circle { left: 1.75rem; }
+#theme3:checked ~ .slider-bg .slider-circle { left: 2.81rem; }
 
 /* --------------END TOGGLE SLIDER --------------- */
 
 /* ------------------- SCREEN DISPLAY ---------------------- */
 .grid-2{
   width: 100%;
-  max-width: 540px;
+  max-width: 33.75rem;
   margin:0 auto;
-  height:130px;
-  margin-top:5px;
-  border-radius: 10px;
-  padding:20px 29px 25px 20px;
+  height:8.13rem;
+  margin-top:0.31rem;
+  border-radius: 0.63rem;
+  padding:1.25rem 1.81rem 1.56rem 1.25rem;
   text-align: right;
-  font-size: 56px;
+  font-size: 3.5rem;
   background-color: var(--clr-veryDarkDesaturatedBlue-screenBckgrnd);
 }
 .expression{
-  font-size: 16px;
-  /* padding-top:-5px; */
+  font-size: 1rem;
   margin-top:0;
 }
 
@@ -244,50 +243,50 @@ input[type="radio"] {
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  row-gap: 25px;
-  column-gap: 20px; /* optional spacing between columns */  
+  row-gap: 1.56rem;
+  column-gap: 1.25rem; /* optional spacing between columns */  
   width: 100%;
-  max-width: 540px; /* Controls max size of the grid */
-  margin:3px auto; /* Centers the grid horizontally */
-  padding: 32px 30px; /* Equal side padding to prevent sticking on mobile */  
+  max-width: 33.75rem; /* Controls max size of the grid */
+  margin:0.19rem auto; /* Centers the grid horizontally */
+  padding: 2rem 1.88rem; /* Equal side padding to prevent sticking on mobile */  
   box-sizing: border-box;
   background-color: var(--clr-veryDarkDesaturatedBlue-toggleKeypadBckgrnd);
-  border-radius: 10px;
+  border-radius: 0.63rem;
 }
 /* ----------------------- Generic Button Style ----------------------- */
 .btn{
-  width:100px;
-  height:63px;
+  width:6.25rem;
+  height:3.94rem;
   background-color: var(--clr-lightGrayishOrange-keyBckgrnd);
-  box-shadow: inset 0 -6px 4px -2px var(--clr-grayishOrange-keyShadow);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem var(--clr-grayishOrange-keyShadow);
   outline: none;
-  border-radius: 10px;
+  border-radius: 0.63rem;
   border:none;
   cursor:pointer;
   color:var(--clr-veryDarkGrayishBlue);
-  font-size:40px;
+  font-size:2.5rem;
 }
 .btn:active {
-  transform: translateY(2px);
-  box-shadow: 0 1px 0 var(--btn-shadow, var(--clr-grayishOrange-keyShadow));
+  transform: translateY(0.13rem);
+  box-shadow: 0 0.06rem 0 var(--btn-shadow, var(--clr-grayishOrange-keyShadow));
 }
 /* ----------------- Special Button Styles ------------------- */
 .delBtn,
 .reset{
   text-transform: uppercase;
-  font-size: 29px;
+  font-size: 1.81rem;
   color:var(--clr-white);
 }
 /* ------------------- DELETE Button ---------------------- */
 .delBtn{
   background-color: hsl(225, 21%, 49%);
-  box-shadow: inset 0 -6px 4px -2px hsl(224, 28%, 35%); 
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem hsl(224, 28%, 35%); 
   color:var(--clr-white);
 }
 /* ------------------- RESET Button --------------------- */
 .reset{
   background-color: hsl(226, 25%, 55%);
-  box-shadow: inset 0 -6px 4px -2px hsl(224, 28%, 35%);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem hsl(224, 28%, 35%);
   color:var(--clr-white);
 }
 .delBtn:hover{
@@ -299,15 +298,15 @@ input[type="radio"] {
 /* ----------------------- EQUAL Button --------------------- */
 .eqlBtn{
   background-color: hsl(6, 63%, 50%);
-  box-shadow: inset 0 -6px 4px -2px hsl(6, 70%, 34%);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem hsl(6, 70%, 34%);
   color:var(--clr-white);
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 .eqlBtn{
   background-color: hsl(6, 63%, 50%);
-  box-shadow: inset 0 -6px 4px -2px hsl(6, 70%, 34%);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem hsl(6, 70%, 34%);
   color:var(--clr-white);
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 .eqlBtn:hover{
   background-color: hsl(6, 87%, 68%);
@@ -315,12 +314,12 @@ input[type="radio"] {
 /* ------------------ Span reset and equal buttons across two columns ------------------ */
 .grid-3 .reset {
   grid-column: span 2;
-  width:225px;
-  height:63px;
+  width:14.06rem;
+  height:3.94rem;
 }
 .grid-3 .eqlBtn {
   grid-column: span 2;
-  width:225px;
+  width:14.06rem;
 }
 /* ------------------------END CALCULATOR BUTTONS --------------------------- */
 
@@ -332,18 +331,18 @@ footer{
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 20px;
-  padding: 10px;
+  margin-top: 1.25rem;
+  padding: 0.63rem;
   color: var(--white);
 }
 .attribuition {
   text-align: center;
   margin: 0;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .fa{
   color:var(--clr-lightYellow);
-  font-size:14px;
+  font-size:0.88rem;
 }
 
 /* ------------------------ THEME ------------------------- */
@@ -360,7 +359,7 @@ body.theme3{
   background-color:var(--clr-veryDarkViolet-mainBckgrnd);  
 }
 .grid-1.theme1{
-  color : white;
+  color : var(--clr-white);
 }
 .grid-1.theme2{
   color : var(--clr-veryDarkGrayishYellow);
@@ -415,27 +414,27 @@ body.theme3{
 }
 .btn.theme1{
   background-color: var(--clr-lightGrayishOrange-keyBckgrnd);
-  box-shadow: inset 0 -6px 4px -2px var(--clr-grayishOrange-keyShadow);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem var(--clr-grayishOrange-keyShadow);
   color:var(--clr-veryDarkGrayishBlue);
 }
 .btn.theme2{
   background-color: var(--clr-lightGrayishYellow-keyBckgrnd);
-  box-shadow: inset 0 -6px 4px -2px var(--clr-darkGrayishOrange-keyShadow);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem var(--clr-darkGrayishOrange-keyShadow);
   color:var(--clr-veryDarkGrayishYellow);
 }
 .btn.theme3{
   background-color: var(--clr-veryDarkVioletl-keyBckgrnd);
-  box-shadow: inset 0 -6px 4px -2px var(--clr-darkMagenta-keyShadow);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem var(--clr-darkMagenta-keyShadow);
   color:var(--clr-lightYellow);
 }
 .btn.theme1:active {
-  box-shadow: 0 1px 0 var(--btn-shadow, var(--clr-grayishOrange-keyShadow));
+  box-shadow: 0 0.06rem 0 var(--btn-shadow, var(--clr-grayishOrange-keyShadow));
 }
 .btn.theme2:active {
-  box-shadow: 0 1px 0 var(--btn-shadow, var(--clr-darkGrayishOrange-keyShadow));
+  box-shadow: 0 0.06rem 0 var(--btn-shadow, var(--clr-darkGrayishOrange-keyShadow));
 }
 .btn.theme3:active {
-  box-shadow: 0 1px 0 var(--btn-shadow, var(--clr-darkMagenta-keyShadow));
+  box-shadow: 0 0.06rem 0 var(--btn-shadow, var(--clr-darkMagenta-keyShadow));
 }
 .btn.theme1:hover{
   background-color: var(--clr-white);
@@ -448,32 +447,32 @@ body.theme3{
 }
 .delBtn.theme1{
   background-color: hsl(225, 21%, 49%);
-  box-shadow: inset 0 -6px 4px -2px hsl(224, 28%, 35%);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem hsl(224, 28%, 35%);
   color:var(--clr-white);
 }
 .reset.theme1{
   background-color: hsl(226, 28%, 58%);
-  box-shadow: inset 0 -6px 4px -2px hsl(224, 28%, 35%);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem hsl(224, 28%, 35%);
   color:var(--clr-white);
 }
 .delBtn.theme2{
   background-color: var(--clr-darkModerateCyan-keyBckgrnd);
-  box-shadow: inset 0 -6px 4px -2px var(--clr-veryDarkCyan-keyShadow);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem var(--clr-veryDarkCyan-keyShadow);
   color:var(--clr-white);
 }
 .reset.theme2{
   background-color: hsl(186, 41%, 42%);
-  box-shadow: inset 0 -6px 4px -2px var(--clr-veryDarkCyan-keyShadow);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem var(--clr-veryDarkCyan-keyShadow);
   color:var(--clr-white);
 }
 .delBtn.theme3{
   background-color: var(--clr-darkViolet-keyBckgrnd);
-  box-shadow: inset 0 -6px 4px -2px var(--clr-vividMagenta-keyShadow);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem var(--clr-vividMagenta-keyShadow);
   color:var(--clr-white);
 }
 .reset.theme3{
   background-color: hsl(281, 88%, 28%);
-  box-shadow: inset 0 -6px 4px -2px var(--clr-vividMagenta-keyShadow);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem var(--clr-vividMagenta-keyShadow);
   color:var(--clr-white);
 }
 .delBtn.theme1:hover{
@@ -496,17 +495,17 @@ body.theme3{
 }
 .eqlBtn.theme1{
   background-color: hsl(6, 63%, 50%);
-  box-shadow: inset 0 -6px 4px -2px hsl(6, 70%, 34%);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem hsl(6, 70%, 34%);
   color:var(--clr-white);
 }
 .eqlBtn.theme2{
   background-color: var(--clr-orange-keyToggleBckgrnd);
-  box-shadow: inset 0 -6px 4px -2px var(--clr-darkOrange-keyShadow);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem var(--clr-darkOrange-keyShadow);
   color:var(--clr-white);
 }
 .eqlBtn.theme3{
   background-color: var(--clr-pureCyan-keyToggleBckgrnd);
-  box-shadow: inset 0 -6px 4px -2px var(--clr-softCyan-keyShadow);
+  box-shadow: inset 0 -0.38rem 0.25rem -0.13rem var(--clr-softCyan-keyShadow);
   color:var(--clr-veryDarkBlue);
 }
 .eqlBtn.theme1:hover{
@@ -545,7 +544,7 @@ footer.theme3{
 
 /* --------------TOGGLE SLIDER --------------- */
   .grid-1{
-    padding: 1rem 30px 0 1rem;
+    padding: 1rem 1.88rem 0 1rem;
   }
   .top-labels {
     font-size: 0.8rem;
@@ -556,38 +555,38 @@ footer.theme3{
 /* --------------END TOGGLE SLIDER --------------- */
 
   .grid-2{
-    max-width: 325px;
-    height:88px;
-    padding:15px 20px 25px 20px;
-    font-size: 40px;
+    max-width: 20.31rem;
+    height:5.5rem;
+    padding:0.94rem 1.25rem 1.56rem 1.25rem;
+    font-size: 2.5rem;
   }
   .expression{
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 /* ------------------- CALCULATOR BUTTONS --------------------------- */
   .grid-3 {
-    row-gap: 15px;
-    column-gap: 10px; /* optional spacing between columns */  
-    max-width: 325px; /* Controls max size of the grid */
-    margin:5px auto; /* Centers the grid horizontally */
-    padding: 22px 21px; /* Equal side padding to prevent sticking on mobile */  
+    row-gap: 0.94rem;
+    column-gap: 0.63rem; /* optional spacing between columns */  
+    max-width: 20.31rem; /* Controls max size of the grid */
+    margin:0.31rem auto; /* Centers the grid horizontally */
+    padding: 1.38rem 1.31rem; /* Equal side padding to prevent sticking on mobile */  
   }
   .btn{
-    width:63px;
-    border-radius: 5px;
-    font-size:32px;
+    width:3.94rem;
+    border-radius: 0.31rem;
+    font-size:2rem;
   }
   .grid-3 .reset {
-    width:135px;
+    width:8.44rem;
   }
   .grid-3 .eqlBtn {
-    width:135px;
+    width:8.44rem;
   }
   .delBtn,.reset{
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .eqlBtn {
-    font-size:20px;
+    font-size:1.25rem;
   }
 }
 
