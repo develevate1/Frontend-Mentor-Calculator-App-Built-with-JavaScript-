@@ -164,7 +164,7 @@ document.addEventListener('click', e => {
       const cleanExpr = expressionDisplay.textContent.replace(/x/g, '*');
       expressionDisplay.textContent = cleanExpr;
       const result = eval(expressionDisplay.textContent.replace(/x/g, '*').replace(/=/g, ''));
-      totalDisplay.textContent = parseFloat(result.toFixed(13)).toString(); // Limit to 10 decimals
+      totalDisplay.textContent = parseFloat(result.toFixed(13)).toLocaleString(); // Limit to 10 decimals
       justEvaluated = true;
     } catch {
       totalDisplay.textContent = 'Error';
