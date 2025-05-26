@@ -323,6 +323,29 @@ input[type="radio"] {
   width:225px;
 }
 /* ------------------------END CALCULATOR BUTTONS --------------------------- */
+
+/* -------------------- FOOTER ----------------------------- */
+
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  color: var(--white);
+}
+.attribuition {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+}
+.fa{
+  color:var(--clr-lightYellow);
+  font-size:14px;
+}
+
 /* ------------------------ THEME ------------------------- */
 body.theme1{
   color:var(--clr-white);
@@ -495,29 +518,26 @@ body.theme3{
 .eqlBtn.theme3:hover{
   background-color: hsl(177, 92%, 70%);
 }
-
-/* -------------------- FOOTER ----------------------------- */
-
-footer{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 20px;
-  padding: 10px;
-  color: white;
+footer.theme1{
+  color: var(--white);
 }
-.attribuition {
-  text-align: center;
-  margin: 0;
-  font-size: 12px;
+footer.theme2{
+  color: var(--clr-veryDarkGrayishYellow);
 }
-.attribuition a{
-  color:var(--clr-darkModerateCyan-keyBckgrnd);
-  font-size:14px;
+footer.theme3{
+  color: var(--clr-lightYellow);
+}
+.fa.theme1{
+  color:var(--clr-lightYellow);
+}
+.fa.theme2{
+  color:var(--clr-orange-keyToggleBckgrnd);
+}
+.fa.theme3{
+  color:var(--clr-softCyan-keyShadow);
 }
 
+/* ---------- Media Query for Mobile Devices (max-width: 600px) ---------- */
 @media (max-width:600px){
   .section-grid{
     margin-top:0px;
@@ -570,5 +590,5 @@ footer{
     font-size:20px;
   }
 }
-/* ------------------------END CALCULATOR BUTTONS --------------------------- */
+
 
